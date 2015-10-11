@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".HomeActivity">
+
+    <item
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:id="@+id/action_search"
+        app:showAsAction="always"
+        android:title="@string/MenuItemSearchText"/>
+</menu>

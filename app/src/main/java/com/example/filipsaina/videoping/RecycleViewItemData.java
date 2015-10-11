@@ -1,0 +1,41 @@
+package com.example.filipsaina.videoping;
+
+/**
+Data model used for defining an element that populates the RecycleView widget.
+ */
+
+public class RecycleViewItemData {
+
+    private String videoTitle;
+    private String videoId;
+    private String imageURL;
+    private String videoDescription;
+    private int duration;
+    private int providerIndex;
+
+    public RecycleViewItemData(String videoTitle, String imageURL, String videoId, String videoDescription,int duration, int providerIndex){
+            this.videoTitle = videoTitle;
+            this.imageURL = imageURL;
+            this.videoId = videoId;
+            this.videoDescription = videoDescription;
+            this.duration = duration;
+            this.providerIndex = providerIndex;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+    public String getVideoTitle() {
+        return videoTitle;
+    }
+    public String getVideoDescription(){
+        return videoDescription;
+    }
+    public String getVideoId(){
+        return videoId;
+    }
+    public int getDurationInSeconds(){ return duration; }
+    public int getProviderIndex(){
+        return providerIndex;
+    }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/recycle_view_item_height"
+    android:layout_margin="1dp"
+    android:background="@color/recycleItemColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp">
+
+    <!-- here goes the icon -->
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/recycle_view_item_image_width"
+        android:layout_height="@dimen/recycle_view_item_image_height"
+        android:contentDescription="icon"
+        android:src="@drawable/abc_item_background_holo_dark"
+        android:clickable="false"
+        android:background="@color/recycleItemColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <!-- and some text -->
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/recycle_view_item_title_height"
+        android:layout_toRightOf="@+id/item_icon"
+        android:textColor="#ff3c3c3c"
+        android:layout_marginLeft="8dp"
+        android:textSize="@dimen/recycle_view_item_title_textsize"
+        android:clickable="false"
+        android:enabled="true"
+        android:text="item_title"
+        android:maxLines="2"
+        android:minLines="1"
+        android:gravity="left|top"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:textIsSelectable="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="item_description"
+        android:textColor="#ed676767"
+        android:id="@+id/item_description"
+        android:layout_below="@+id/item_title"
+        android:layout_alignLeft="@+id/item_title"
+        android:layout_alignStart="@+id/item_title"
+        android:paddingLeft="5dp"
+        android:textSize="9sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/item_icon"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/recycle_item_provider_name"
+        android:textColor="#ed676767"
+        android:id="@+id/providerName"
+        android:textSize="8sp"
+        android:layout_alignTop="@+id/item_title"
+        android:layout_alignRight="@+id/item_title"
+        android:layout_alignEnd="@+id/item_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00:00"
+        android:id="@+id/duration"
+        android:background="#96454545"
+        android:textSize="12sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignBaseline="@+id/item_title"
+        android:layout_alignBottom="@+id/item_title"
+        android:layout_toLeftOf="@+id/item_title"
+        android:layout_toStartOf="@+id/item_title" />
+
+</RelativeLayout>
