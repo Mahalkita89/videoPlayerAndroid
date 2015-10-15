@@ -28,10 +28,6 @@ import java.util.List;
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 
 
-/**
- * This project('Video ping') and all its code was created for the 'Croapps workshop', 2015.
- */
-
 public class HomeActivity extends AppCompatActivity implements ThreadCompleteListener {
 
     //drawer reference(on drawerSetup)
